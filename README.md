@@ -9,7 +9,7 @@ An interactive developer portfolio showcasing my work in backend systems, AI-pow
 - Animation — GSAP (Club Plugins), Three.js, WebGL
 - Deployment — Vercel
 
-## Features
+## ✨ Features
 
 - Interactive 3D character scene
 - Smooth GSAP scroll animations
@@ -17,7 +17,7 @@ An interactive developer portfolio showcasing my work in backend systems, AI-pow
 - Sections for projects, skills, and experience
 - Optimized for performance and modern browsers
 
-## Local Development
+## 🚀 Getting Started
 
 Clone the repository and run the project locally.
 
@@ -26,5 +26,5 @@ Clone the repository and run the project locally.
 - npm install
 - npm run dev
 
-## Instructions
+## 📄 Instructions
 I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
