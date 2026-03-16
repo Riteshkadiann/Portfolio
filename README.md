@@ -21,7 +21,6 @@ An interactive developer portfolio showcasing my work in backend systems, AI-pow
 
 Clone the repository and run the project locally.
 
-- git clone https://github.com/Riteshkadiann/Portfolio.git
 - cd Portfolio
 - npm install
 - npm run dev
