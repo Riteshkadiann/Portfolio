@@ -1,17 +1,15 @@
 # My Portfolio Wesbite - Overview 🚀
+An interactive developer portfolio showcasing my work in backend systems, AI-powered tools, and modern web technologies.
 
-This repository contains the open source version of my porfolio website.
-Do check it out!
+![Portfolio-Preview](public/images/preview.png)
 
-## Instructions 🛠️
+## 🛠️ Tech Stack
 
-I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it🔴. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
+- Frontend — React, TypeScript, HTML, CSS, JavaScript
+- Animation — GSAP (Club Plugins), Three.js, WebGL
+- Deployment — Vercel
 
-**Techstack** - React, TypeScript, GSAP, ThreeJS, WebGL, HTML, Css, JavaScript
-
-**Deployment** - Vercel
-
-**Features**
+## Features
 
 - Interactive 3D character scene
 - Smooth GSAP scroll animations
@@ -19,7 +17,7 @@ I have modified the gsap club plugins with the trial plugins, but with the trial
 - Sections for projects, skills, and experience
 - Optimized for performance and modern browsers
 
-**Local Development**
+## Local Development
 
 Clone the repository and run the project locally.
 
@@ -28,9 +26,5 @@ Clone the repository and run the project locally.
 - npm install
 - npm run dev
 
-![Portfolio-Preview](public/images/preview.png)
-
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
-"# Portfolio" 
+## Instructions
+I have modified the gsap club plugins with the trial plugins, but with the trial plugin you cannot host it. So for Club plugins, Check out here: https://gsap.com/docs/v3/Installation/
