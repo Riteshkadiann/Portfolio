@@ -1,4 +1,4 @@
-# My Portfolio Wesbite - Overview 🚀
+# ✦ My Portfolio Wesbite - Overview
 An interactive developer portfolio showcasing my work in backend systems, AI-powered tools, and modern web technologies.
 
 ![Portfolio-Preview](public/images/preview.png)
