@@ -107,31 +107,196 @@ body {
   width: 100%;
   position: relative;
   overflow: clip;
-  height: var(--vh);
+  min-height: var(--vh);
   margin: auto;
   margin-top: 50px;
-  margin-bottom: -100px;
+  margin-bottom: 0;
+  padding: 60px 40px;
 }
 
-.techstack h2 {
-  font-size: 80px;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  top: 120px;
-  left: 0;
-  font-weight: 400;
+.techstack-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  max-width: 1400px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.techstack-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.techstack-header {
+  margin-bottom: 20px;
+}
+
+.techstack-title {
+  font-size: 70px;
+  font-weight: 500;
+  margin: 0 0 15px 0;
   text-transform: uppercase;
+  line-height: 1;
 }
 
-@media screen and (min-width: 768px) {
-  body {
-    --cWidth: 94%;
-  }
+.techstack-subtitle {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  font-weight: 300;
+}
+
+.techstack-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-core-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  color: #5eead4;
+}
+
+.core-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 8px;
+}
+
+.core-skill {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 6px;
+  background-color: rgba(0, 212, 255, 0.08);
+  border: 1.5px solid rgba(0, 212, 255, 0.3);
+  transition: all 0.3s ease;
+  position: relative;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.core-skill::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(0, 212, 255, 0.3), transparent 80%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.core-skill:hover::before {
+  opacity: 1;
+}
+
+/* Glow effects for Python, FastAPI, AWS, JavaScript */
+.core-skill-python,
+.core-skill-fastapi,
+.core-skill-aws,
+.core-skill-javascript {
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+}
+
+.core-skill-python:hover,
+.core-skill-fastapi:hover,
+.core-skill-aws:hover,
+.core-skill-javascript:hover {
+  box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+  border-color: rgba(0, 212, 255, 0.8);
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+  letter-spacing: 1px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.techstack-canvas-wrapper {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  opacity: 0.85;
+  filter: drop-shadow(0 20px 60px rgba(0, 212, 255, 0.15));
+}
+
+.tech-canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 @media screen and (max-width: 900px) {
-  .techstack h2 {
-    font-size: 40px;
+  .techstack-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    align-items: flex-start;
+  }
+
+  .techstack {
+    padding: 40px 20px;
+    margin-bottom: 0;
+  }
+
+  .techstack-title {
+    font-size: 50px;
+  }
+
+  .techstack-canvas-wrapper {
+    height: 400px;
+  }
+
+  .section-core-title {
+    font-size: 32px;
+  }
+
+  .core-skill {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .techstack-title {
+    font-size: 36px;
+  }
+
+  .section-core-title {
+    font-size: 24px;
+  }
+
+  .core-skill {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .techstack-canvas-wrapper {
+    height: 300px;
+  }
+
+  .section-title {
+    font-size: 16px;
+  }
+
+  .section-description {
+    font-size: 14px;
   }
 }

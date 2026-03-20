@@ -186,119 +186,105 @@ const TechStack = () => {
 
   return (
     <div className="techstack">
-      <h2> My Techstack</h2>
+      <div className="techstack-container">
+        {/* LEFT SIDE - TEXT CONTENT */}
+        <div className="techstack-content">
+          <div className="techstack-header">
+            <h2 className="techstack-title">Tech Stack</h2>
+            <p className="techstack-subtitle">Building scalable systems and AI solutions</p>
+          </div>
 
-      {webglAvailable ? (
-        <Canvas
-          shadows
-          gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
-          camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
-          onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
-          className="tech-canvas"
-        >
-          <ambientLight intensity={1} />
-          <spotLight
-            position={[20, 20, 25]}
-            penumbra={1}
-            angle={0.2}
-            color="white"
-            castShadow
-            shadow-mapSize={[512, 512]}
-          />
-          <directionalLight position={[0, 5, -4]} intensity={2} />
-          <Physics gravity={[0, 0, 0]}>
-            <Pointer isActive={isActive} />
-            {spheres.map((props, i) => (
-              <SphereGeo
-                key={i}
-                {...props}
-                material={materials[Math.floor(Math.random() * materials.length)]}
-                isActive={isActive}
-              />
-            ))}
-          </Physics>
-          <Environment
-            files="/models/char_enviorment.hdr"
-            environmentIntensity={0.5}
-            environmentRotation={[0, 4, 2]}
-          />
-          <EffectComposer enableNormalPass={false}>
-            <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
-          </EffectComposer>
-        </Canvas>
-      ) : (
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            height: "500px",
-            color: "#aaa",
-            padding: "20px",
-            textAlign: "center",
-            borderRadius: "8px",
-          }}
-        >
-          <div>
-            <p style={{ fontSize: "16px", marginBottom: "10px" }}>
-              WebGL is not available on your browser. Please enable hardware acceleration or update your GPU drivers to view this section.
-            </p>
+          {/* Core Stack Section */}
+          <div className="techstack-section">
+            <h3 className="section-core-title">Core Stack</h3>
+            <div className="core-skills">
+              {["Python", "FastAPI", "AWS", "JavaScript"].map((skill) => (
+                <span key={skill} className={`core-skill core-skill-${skill.toLowerCase().replace(/[.\s]/g, '')}`}>
+                  {skill}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          {/* Backend Systems */}
+          <div className="techstack-section">
+            <h3 className="section-title">Backend Systems</h3>
+            <p className="section-description">High-performance APIs · Scalable architectures · Distributed systems</p>
+          </div>
+
+          {/* AI / Machine Learning */}
+          <div className="techstack-section">
+            <h3 className="section-title">AI / Machine Learning</h3>
+            <p className="section-description">PyTorch · scikit-learn · NLP · Data processing</p>
+          </div>
+
+          {/* Infrastructure */}
+          <div className="techstack-section">
+            <h3 className="section-title">Infrastructure</h3>
+            <p className="section-description">AWS (EC2, S3) · REST APIs · Git</p>
           </div>
         </div>
-      )}
 
-      <div style={{ marginTop: "60px", paddingBottom: "40px" }}>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-          gap: "30px",
-          maxWidth: "1200px",
-          margin: "0 auto"
-        }}>
-          <div style={{ padding: "25px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
-            <h3 style={{ color: "#00d4ff", marginBottom: "15px", fontSize: "1.1rem", fontWeight: "600" }}>Languages</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-              {["Python", "JavaScript", "Java", "C#"].map((skill) => (
-                <span key={skill} style={{ padding: "8px 12px", backgroundColor: "rgba(0,212,255,0.1)", borderRadius: "6px", fontSize: "0.9rem", border: "1px solid rgba(0,212,255,0.2)" }}>{skill}</span>
-              ))}
+        {/* RIGHT SIDE - ANIMATED BALLS */}
+        <div className="techstack-canvas-wrapper">
+          {webglAvailable ? (
+            <Canvas
+              shadows
+              gl={{ alpha: true, stencil: false, depth: false, antialias: false }}
+              camera={{ position: [0, 0, 20], fov: 32.5, near: 1, far: 100 }}
+              onCreated={(state) => (state.gl.toneMappingExposure = 1.5)}
+              className="tech-canvas"
+            >
+              <ambientLight intensity={1} />
+              <spotLight
+                position={[20, 20, 25]}
+                penumbra={1}
+                angle={0.2}
+                color="white"
+                castShadow
+                shadow-mapSize={[512, 512]}
+              />
+              <directionalLight position={[0, 5, -4]} intensity={2} />
+              <Physics gravity={[0, 0, 0]}>
+                <Pointer isActive={isActive} />
+                {spheres.map((props, i) => (
+                  <SphereGeo
+                    key={i}
+                    {...props}
+                    material={materials[Math.floor(Math.random() * materials.length)]}
+                    isActive={isActive}
+                  />
+                ))}
+              </Physics>
+              <Environment
+                files="/models/char_enviorment.hdr"
+                environmentIntensity={0.5}
+                environmentRotation={[0, 4, 2]}
+              />
+              <EffectComposer enableNormalPass={false}>
+                <N8AO color="#0f002c" aoRadius={2} intensity={1.15} />
+              </EffectComposer>
+            </Canvas>
+          ) : (
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "100%",
+                color: "#aaa",
+                padding: "20px",
+                textAlign: "center",
+                borderRadius: "8px",
+              }}
+            >
+              <div>
+                <p style={{ fontSize: "14px" }}>
+                  WebGL is not available
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div style={{ padding: "25px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
-            <h3 style={{ color: "#00d4ff", marginBottom: "15px", fontSize: "1.1rem", fontWeight: "600" }}>Backend & APIs</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-              {["FastAPI", "REST APIs", "Node.js", "Express.js"].map((skill) => (
-                <span key={skill} style={{ padding: "8px 12px", backgroundColor: "rgba(0,212,255,0.1)", borderRadius: "6px", fontSize: "0.9rem", border: "1px solid rgba(0,212,255,0.2)" }}>{skill}</span>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ padding: "25px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
-            <h3 style={{ color: "#00d4ff", marginBottom: "15px", fontSize: "1.1rem", fontWeight: "600" }}>Databases</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-              {["PostgreSQL", "MySQL", "MongoDB"].map((skill) => (
-                <span key={skill} style={{ padding: "8px 12px", backgroundColor: "rgba(0,212,255,0.1)", borderRadius: "6px", fontSize: "0.9rem", border: "1px solid rgba(0,212,255,0.2)" }}>{skill}</span>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ padding: "25px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
-            <h3 style={{ color: "#00d4ff", marginBottom: "15px", fontSize: "1.1rem", fontWeight: "600" }}>AI/ML & Data</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-              {["scikit-learn", "spaCy", "PyTorch", "Pandas", "NumPy", "TF-IDF"].map((skill) => (
-                <span key={skill} style={{ padding: "8px 12px", backgroundColor: "rgba(0,212,255,0.1)", borderRadius: "6px", fontSize: "0.9rem", border: "1px solid rgba(0,212,255,0.2)" }}>{skill}</span>
-              ))}
-            </div>
-          </div>
-
-          <div style={{ padding: "25px", backgroundColor: "rgba(255,255,255,0.03)", borderRadius: "12px", border: "1px solid rgba(255,255,255,0.1)" }}>
-            <h3 style={{ color: "#00d4ff", marginBottom: "15px", fontSize: "1.1rem", fontWeight: "600" }}>Cloud & DevOps</h3>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "10px" }}>
-              {["AWS (EC2, S3)", "Render", "Git", "GitHub"].map((skill) => (
-                <span key={skill} style={{ padding: "8px 12px", backgroundColor: "rgba(0,212,255,0.1)", borderRadius: "6px", fontSize: "0.9rem", border: "1px solid rgba(0,212,255,0.2)" }}>{skill}</span>
-              ))}
-            </div>
-          </div>
+          )}
         </div>
       </div>
     </div>

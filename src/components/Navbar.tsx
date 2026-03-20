@@ -6,6 +6,7 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import "./styles/Navbar.css";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
+// eslint-disable-next-line react-refresh/only-export-components
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
