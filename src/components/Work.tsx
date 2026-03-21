@@ -10,7 +10,7 @@ const projects = [
     tools: "Python, FastAPI, React, PostgreSQL, spaCy, scikit-learn",
     image: "/images/skillvector.png",
     description: "NLP-based skill matching system analyzing resumes vs job descriptions using TF-IDF and cosine similarity. Deployed RESTful APIs with 70% accuracy improvement.",
-    link: "https://skillvector-y1r1.onrender.com/",
+    link: "https://skillvector-04vy.onrender.com/",
     linkText: "Live Demo",
   },
   {
