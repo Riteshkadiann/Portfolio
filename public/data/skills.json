@@ -1,0 +1,210 @@
+{
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "proficiency": 95,
+      "category": "backend",
+      "relatedSkills": ["fastapi", "django", "pytorch", "tensorflow", "numpy", "pandas"],
+      "description": "Expert in Python for backend development, data science, and AI/ML applications.",
+      "color": "#3776AB"
+    },
+    {
+      "id": "javascript",
+      "name": "JavaScript",
+      "proficiency": 90,
+      "category": "frontend",
+      "relatedSkills": ["react", "nodejs", "typescript", "express"],
+      "description": "Advanced JavaScript skills for full-stack web development.",
+      "color": "#F7DF1E"
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "proficiency": 85,
+      "category": "frontend",
+      "relatedSkills": ["react", "nodejs", "javascript"],
+      "description": "Strong typing and scalable application architecture.",
+      "color": "#3178C6"
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "proficiency": 88,
+      "category": "frontend",
+      "relatedSkills": ["javascript", "typescript", "nodejs"],
+      "description": "Building modern, responsive user interfaces with React ecosystem.",
+      "color": "#61DAFB"
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "proficiency": 85,
+      "category": "backend",
+      "relatedSkills": ["javascript", "express", "typescript", "mongodb"],
+      "description": "Server-side JavaScript runtime for scalable applications.",
+      "color": "#339933"
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "proficiency": 90,
+      "category": "backend",
+      "relatedSkills": ["python", "pytorch", "tensorflow"],
+      "description": "High-performance Python web framework for APIs.",
+      "color": "#009688"
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "proficiency": 82,
+      "category": "backend",
+      "relatedSkills": ["nodejs", "javascript", "mongodb"],
+      "description": "Minimal and flexible Node.js web application framework.",
+      "color": "#000000"
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "proficiency": 80,
+      "category": "database",
+      "relatedSkills": ["nodejs", "express", "python"],
+      "description": "NoSQL database for modern applications.",
+      "color": "#47A248"
+    },
+    {
+      "id": "mysql",
+      "name": "MySQL",
+      "proficiency": 78,
+      "category": "database",
+      "relatedSkills": ["python", "nodejs"],
+      "description": "Relational database management system.",
+      "color": "#4479A1"
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "proficiency": 88,
+      "category": "ai",
+      "relatedSkills": ["python", "tensorflow", "numpy"],
+      "description": "Deep learning framework for AI research and production.",
+      "color": "#EE4C2C"
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "proficiency": 82,
+      "category": "ai",
+      "relatedSkills": ["python", "pytorch", "numpy"],
+      "description": "End-to-end machine learning platform.",
+      "color": "#FF6F00"
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "proficiency": 92,
+      "category": "ai",
+      "relatedSkills": ["python", "pandas", "pytorch"],
+      "description": "Fundamental package for scientific computing.",
+      "color": "#013243"
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "proficiency": 90,
+      "category": "ai",
+      "relatedSkills": ["python", "numpy", "pytorch"],
+      "description": "Data manipulation and analysis library.",
+      "color": "#150458"
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "proficiency": 75,
+      "category": "cloud",
+      "relatedSkills": ["python", "nodejs", "docker"],
+      "description": "Amazon Web Services cloud platform.",
+      "color": "#FF9900"
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "proficiency": 72,
+      "category": "devops",
+      "relatedSkills": ["aws", "nodejs", "python"],
+      "description": "Container platform for application deployment.",
+      "color": "#2496ED"
+    },
+    {
+      "id": "git",
+      "name": "Git",
+      "proficiency": 88,
+      "category": "devops",
+      "relatedSkills": ["docker", "aws"],
+      "description": "Version control system for collaborative development.",
+      "color": "#F05032"
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "proficiency": 78,
+      "category": "frontend",
+      "relatedSkills": ["javascript", "react", "typescript"],
+      "description": "3D graphics library for web applications.",
+      "color": "#000000"
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "proficiency": 80,
+      "category": "backend",
+      "relatedSkills": ["python", "fastapi", "mysql"],
+      "description": "High-level Python web framework.",
+      "color": "#092E20"
+    },
+    {
+      "id": "spacy",
+      "name": "spaCy",
+      "proficiency": 85,
+      "category": "ai",
+      "relatedSkills": ["python", "pytorch", "numpy"],
+      "description": "Industrial-strength NLP library.",
+      "color": "#09A3D5"
+    },
+    {
+      "id": "java",
+      "name": "Java",
+      "proficiency": 70,
+      "category": "backend",
+      "relatedSkills": ["python", "javascript"],
+      "description": "Object-oriented programming language.",
+      "color": "#ED8B00"
+    }
+  ],
+  "categories": {
+    "frontend": {
+      "name": "Frontend",
+      "color": "#61DAFB"
+    },
+    "backend": {
+      "name": "Backend",
+      "color": "#3776AB"
+    },
+    "database": {
+      "name": "Database",
+      "color": "#4479A1"
+    },
+    "ai": {
+      "name": "AI / ML",
+      "color": "#EE4C2C"
+    },
+    "cloud": {
+      "name": "Cloud",
+      "color": "#FF9900"
+    },
+    "devops": {
+      "name": "DevOps",
+      "color": "#F05032"
+    }
+  }
+}

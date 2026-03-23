@@ -1,0 +1,106 @@
+{
+  "timeline": [
+    {
+      "id": "2025-datacove",
+      "year": 2025,
+      "month": 1,
+      "title": "Business Development Executive",
+      "company": "DataCove.ai",
+      "type": "work",
+      "description": "Leading AI solution outreach to Canadian & US legal firms for early-stage adoption. Translated complex workflow automation and phishing detection systems into business solutions.",
+      "technologies": ["Python", "FastAPI", "AWS", "AI/ML"],
+      "highlights": [
+        "AI solution outreach to legal firms",
+        "Workflow automation systems",
+        "Phishing detection systems",
+        "Product-market fit refinement"
+      ],
+      "image": "/images/preview.png"
+    },
+    {
+      "id": "2024-centennial",
+      "year": 2024,
+      "month": 9,
+      "title": "Software Engineering Technology",
+      "company": "Centennial College",
+      "type": "education",
+      "description": "Advanced Diploma with CGPA 3.7/4.5. Relevant coursework: Data Structures & Algorithms, Programming, Advanced Database Concepts, Software Systems Design, Unix/Linux, Linear Algebra & Statistics.",
+      "technologies": ["Java", "Python", "SQL", "Unix/Linux"],
+      "highlights": [
+        "CGPA 3.7/4.5",
+        "Data Structures & Algorithms",
+        "Advanced Database Concepts",
+        "AWS Certified Solutions Architect (2026)"
+      ],
+      "image": "/images/preview.png"
+    },
+    {
+      "id": "2024-portfolio",
+      "year": 2024,
+      "month": 6,
+      "title": "3D Portfolio Website",
+      "company": "Personal Project",
+      "type": "project",
+      "description": "Modern 3D developer portfolio built with React, Three.js, and GSAP. Features interactive 3D elements, smooth animations, and responsive design.",
+      "technologies": ["React", "Three.js", "GSAP", "TypeScript"],
+      "highlights": [
+        "Interactive 3D character model",
+        "GSAP scroll animations",
+        "Responsive design",
+        "Modern UI/UX"
+      ],
+      "image": "/images/preview.png"
+    },
+    {
+      "id": "2023-ai-project",
+      "year": 2023,
+      "month": 8,
+      "title": "AI-Powered Document Analysis",
+      "company": "Personal Project",
+      "type": "project",
+      "description": "Built an AI-powered document analysis system using NLP techniques for automated text classification and entity extraction.",
+      "technologies": ["Python", "PyTorch", "spaCy", "FastAPI"],
+      "highlights": [
+        "NLP-based text classification",
+        "Entity extraction system",
+        "RESTful API integration",
+        "Machine learning pipeline"
+      ],
+      "image": "/images/preview.png"
+    },
+    {
+      "id": "2023-backend-api",
+      "year": 2023,
+      "month": 3,
+      "title": "Scalable Backend API System",
+      "company": "Personal Project",
+      "type": "project",
+      "description": "Developed a high-performance RESTful API system with authentication, rate limiting, and database optimization.",
+      "technologies": ["Node.js", "Express", "MongoDB", "Docker"],
+      "highlights": [
+        "JWT authentication",
+        "Rate limiting implementation",
+        "Database optimization",
+        "Docker containerization"
+      ],
+      "image": "/images/preview.png"
+    },
+    {
+      "id": "2022-web-dev",
+      "year": 2022,
+      "month": 1,
+      "title": "Started Web Development Journey",
+      "company": "Self-Learning",
+      "type": "milestone",
+      "description": "Began learning web development fundamentals including HTML, CSS, JavaScript, and modern frameworks.",
+      "technologies": ["HTML", "CSS", "JavaScript", "React"],
+      "highlights": [
+        "Frontend fundamentals",
+        "JavaScript mastery",
+        "React framework",
+        "Responsive design"
+      ],
+      "image": "/images/preview.png"
+    }
+  ]
+}
