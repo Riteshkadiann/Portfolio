@@ -11,6 +11,8 @@ import Work from "./Work";
 import setSplitText from "./utils/splitText";
 
 const TechStack = lazy(() => import("./TechStack"));
+const SkillGalaxy = lazy(() => import("./SkillGalaxy"));
+const TimelineTunnel = lazy(() => import("./TimelineTunnel"));
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -48,6 +50,12 @@ const MainContainer = ({ children }: PropsWithChildren) => {
                 <TechStack />
               </Suspense>
             )}
+            <Suspense fallback={<div>Loading Skills Galaxy...</div>}>
+              <SkillGalaxy />
+            </Suspense>
+            <Suspense fallback={<div>Loading Timeline...</div>}>
+              <TimelineTunnel />
+            </Suspense>
             <Contact />
           </div>
         </div>

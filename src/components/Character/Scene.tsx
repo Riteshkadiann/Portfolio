@@ -67,27 +67,41 @@ const Scene = () => {
         let progress = setProgress((value) => setLoading(value));
         const { loadCharacter } = setCharacter(renderer, scene, camera);
 
-        loadCharacter().then((gltf) => {
-          if (gltf) {
-            const animations = setAnimations(gltf);
-            hoverDivRef.current && animations.hover(gltf, hoverDivRef.current);
-            mixer = animations.mixer;
-            let character = gltf.scene;
-            setChar(character);
-            scene.add(character);
-            headBone = character.getObjectByName("spine006") || null;
-            screenLight = character.getObjectByName("screenlight") || null;
-            progress.loaded().then(() => {
-              setTimeout(() => {
-                light.turnOnLights();
-                animations.startIntro();
-              }, 2500);
-            });
-            window.addEventListener("resize", () =>
-              handleResize(renderer, camera, canvasDiv, character)
-            );
-          }
-        });
+        // 加载超时回退机制
+        const loadTimeout = setTimeout(() => {
+          console.log("Character load timeout - forcing progress completion");
+          progress.clear();
+        }, 8000);
+
+        loadCharacter()
+          .then((gltf) => {
+            clearTimeout(loadTimeout);
+            if (gltf) {
+              const animations = setAnimations(gltf);
+              hoverDivRef.current && animations.hover(gltf, hoverDivRef.current);
+              mixer = animations.mixer;
+              let character = gltf.scene;
+              setChar(character);
+              scene.add(character);
+              headBone = character.getObjectByName("spine006") || null;
+              screenLight = character.getObjectByName("screenlight") || null;
+              progress.loaded().then(() => {
+                setTimeout(() => {
+                  light.turnOnLights();
+                  animations.startIntro();
+                }, 2500);
+              });
+              window.addEventListener("resize", () =>
+                handleResize(renderer, camera, canvasDiv, character)
+              );
+            }
+          })
+          .catch((error) => {
+            clearTimeout(loadTimeout);
+            console.error("Failed to load character:", error);
+            progress.clear();
+            setWebglError("Failed to load 3D character model.");
+          });
 
         let mouse = { x: 0, y: 0 },
           interpolation = { x: 0.1, y: 0.2 };

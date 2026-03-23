@@ -1,36 +1,77 @@
 import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
+import { initialFX } from "./utils/initialFX";
 
 import Marquee from "react-fast-marquee";
 
 const Loading = ({ percent }: { percent: number }) => {
-  const { setIsLoading } = useLoading();
+  const { setIsLoading, setLoading } = useLoading();
   const [loaded, setLoaded] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
+  const [localPercent, setLocalPercent] = useState(0);
 
-  if (percent >= 100) {
-    setTimeout(() => {
-      setLoaded(true);
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 1000);
-    }, 600);
-  }
+  // 确定使用哪个百分比值
+  // 优先使用外部传入的 percent，否则使用本地模拟的
+  const displayPercent = percent > localPercent ? percent : localPercent;
+
+  // 自驱动进度模拟 - 确保在任何情况下都有进度显示
+  // 当外部 percent 为 0 时（如移动端或3D模型未渲染），
+  // 组件自身模拟加载进度
+  useEffect(() => {
+    if (percent === 0 && localPercent === 0 && !loaded) {
+      let currentPercent = 0;
+      const interval = setInterval(() => {
+        if (currentPercent <= 50) {
+          const rand = Math.round(Math.random() * 5);
+          currentPercent = Math.min(55, currentPercent + rand);
+        } else if (currentPercent <= 90) {
+          currentPercent = Math.min(90, currentPercent + 1);
+        } else {
+          clearInterval(interval);
+        }
+        setLocalPercent(currentPercent);
+      }, 150);
+      return () => clearInterval(interval);
+    }
+  }, [percent, localPercent, loaded]);
+
+  // 保底机制：当进度达到90%以上后，再等待一小段时间自动完成加载
+  // 确保即使没有外部驱动时也能进入主页面
+  useEffect(() => {
+    if (displayPercent >= 90 && displayPercent < 100 && !loaded) {
+      const timer = setTimeout(() => {
+        setLocalPercent(100);
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [displayPercent, loaded]);
 
   useEffect(() => {
-    import("./utils/initialFX").then((module) => {
-      if (isLoaded) {
-        setClicked(true);
-        setTimeout(() => {
-          if (module.initialFX) {
-            module.initialFX();
-          }
-          setIsLoading(false);
-        }, 900);
-      }
-    });
+    // 只要 percent >= 100 就开始加载完成流程
+    // 用 loaded 作为标志防止重复触发
+    if (displayPercent >= 100 && !loaded) {
+      const timer1 = setTimeout(() => {
+        setLoaded(true);
+        const timer2 = setTimeout(() => {
+          setIsLoaded(true);
+        }, 1000);
+        return () => clearTimeout(timer2);
+      }, 600);
+      return () => clearTimeout(timer1);
+    }
+  }, [displayPercent, loaded]);
+
+  useEffect(() => {
+    if (isLoaded) {
+      setClicked(true);
+      const timer = setTimeout(() => {
+        initialFX();
+        setIsLoading(false);
+      }, 900);
+      return () => clearTimeout(timer);
+    }
   }, [isLoaded, setIsLoading]);
 
   function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
@@ -75,7 +116,7 @@ const Loading = ({ percent }: { percent: number }) => {
             <div className="loading-container">
               <div className="loading-content">
                 <div className="loading-content-in">
-                  Loading <span>{percent}%</span>
+                  Loading <span>{displayPercent}%</span>
                 </div>
               </div>
               <div className="loading-box"></div>

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "1",
+    "year": "2024",
+    "title": "高级全栈开发工程师",
+    "company": "Tech Innovations Inc.",
+    "description": "负责企业级 SaaS 平台的架构设计和开发，使用 React、Node.js 和 AWS 构建高可用、可扩展的微服务架构。",
+    "tags": ["React", "Node.js", "AWS", "Microservices", "TypeScript"],
+    "image": "/images/react2.webp",
+    "type": "work"
+  },
+  {
+    "id": "2",
+    "year": "2023",
+    "title": "AI 驱动的智能客服系统",
+    "company": "Personal Project",
+    "description": "开发基于自然语言处理的智能客服系统，集成 GPT 模型，实现多轮对话、意图识别和情感分析功能。",
+    "tags": ["Python", "TensorFlow", "NLP", "FastAPI", "Redis"],
+    "image": "/images/python.webp",
+    "type": "project"
+  },
+  {
+    "id": "3",
+    "year": "2023",
+    "title": "全栈开发工程师",
+    "company": "Digital Solutions Ltd.",
+    "description": "参与多个大型 Web 应用开发，包括电商平台、数据可视化系统和企业内部管理工具。",
+    "tags": ["Vue.js", "Python", "PostgreSQL", "Docker"],
+    "image": "/images/react.webp",
+    "type": "work"
+  },
+  {
+    "id": "4",
+    "year": "2022",
+    "title": "3D 数据可视化平台",
+    "company": "R&D Project",
+    "description": "构建基于 Three.js 的 3D 数据可视化平台，支持大规模数据集的实时渲染和交互式探索。",
+    "tags": ["Three.js", "WebGL", "React", "D3.js", "Shader"],
+    "image": "/images/react2.webp",
+    "type": "project"
+  },
+  {
+    "id": "5",
+    "year": "2022",
+    "title": "后端开发工程师",
+    "company": "Cloud Services Co.",
+    "description": "专注于后端 API 开发和微服务架构，使用 Go 和 Python 构建高性能服务。",
+    "tags": ["Go", "Python", "Kubernetes", "MongoDB"],
+    "image": "/images/node2.webp",
+    "type": "work"
+  },
+  {
+    "id": "6",
+    "year": "2021",
+    "title": "机器学习平台",
+    "company": "AI Lab",
+    "description": "开发端到端的机器学习平台，支持模型训练、评估、部署和监控的完整生命周期管理。",
+    "tags": ["PyTorch", "MLflow", "Kubeflow", "Spark"],
+    "image": "/images/pytorch.webp",
+    "type": "project"
+  },
+  {
+    "id": "7",
+    "year": "2021",
+    "title": "初级开发工程师",
+    "company": "StartUp Venture",
+    "description": "开始职业生涯，参与多个创业项目，积累全栈开发经验和敏捷开发实践。",
+    "tags": ["JavaScript", "React", "Node.js", "MongoDB"],
+    "image": "/images/javascript.webp",
+    "type": "work"
+  },
+  {
+    "id": "8",
+    "year": "2020",
+    "title": "计算机科学学士",
+    "company": "University of Technology",
+    "description": "以优异成绩毕业，专业方向为人工智能和软件工程。GPA: 3.8/4.0",
+    "tags": ["Computer Science", "AI", "Algorithms", "Data Structures"],
+    "image": "/images/preview.png",
+    "type": "education"
+  }
+]

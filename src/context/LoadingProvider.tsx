@@ -24,12 +24,28 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setIsLoading,
     setLoading,
   };
-  useEffect(() => {}, [loading]);
+  
+  useEffect(() => {
+    // 保底超时机制：10秒后强制完成加载
+    // 解决移动端或3D模型加载失败时无法进入主页面的问题
+    const failSafeTimeout = setTimeout(() => {
+      if (isLoading) {
+        console.log("Fail-safe: Forcing loading completion after timeout");
+        setLoading(100);
+        // 给一些时间让UI更新后再关闭加载页面
+        setTimeout(() => {
+          setIsLoading(false);
+        }, 1500);
+      }
+    }, 10000);
+
+    return () => clearTimeout(failSafeTimeout);
+  }, [isLoading]);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>
       {isLoading && <Loading percent={loading} />}
-      <main className="main-body">{children}</main>
+      <main className={`main-body ${isLoading ? 'main-loading' : ''}`}>{children}</main>
     </LoadingContext.Provider>
   );
 };

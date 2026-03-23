@@ -1,0 +1,146 @@
+[
+  {
+    "id": "1",
+    "name": "React",
+    "proficiency": 95,
+    "category": "Frontend",
+    "relatedSkills": ["2", "3", "4"],
+    "color": "#61DAFB",
+    "description": "现代前端开发框架，擅长构建交互式用户界面"
+  },
+  {
+    "id": "2",
+    "name": "TypeScript",
+    "proficiency": 90,
+    "category": "Frontend",
+    "relatedSkills": ["1", "3", "5"],
+    "color": "#3178C6",
+    "description": "类型安全的 JavaScript 超集，提升代码可维护性"
+  },
+  {
+    "id": "3",
+    "name": "Three.js",
+    "proficiency": 85,
+    "category": "3D/Visualization",
+    "relatedSkills": ["1", "6", "7"],
+    "color": "#000000",
+    "description": "3D 图形渲染库，创建沉浸式 Web 体验"
+  },
+  {
+    "id": "4",
+    "name": "Vue.js",
+    "proficiency": 80,
+    "category": "Frontend",
+    "relatedSkills": ["1", "2", "5"],
+    "color": "#4FC08D",
+    "description": "渐进式 JavaScript 框架，灵活易用"
+  },
+  {
+    "id": "5",
+    "name": "Node.js",
+    "proficiency": 88,
+    "category": "Backend",
+    "relatedSkills": ["2", "6", "8"],
+    "color": "#339933",
+    "description": "服务端 JavaScript 运行时，构建高性能后端"
+  },
+  {
+    "id": "6",
+    "name": "Python",
+    "proficiency": 92,
+    "category": "AI/ML",
+    "relatedSkills": ["5", "7", "9"],
+    "color": "#3776AB",
+    "description": "通用编程语言，AI 和数据科学首选"
+  },
+  {
+    "id": "7",
+    "name": "TensorFlow",
+    "proficiency": 78,
+    "category": "AI/ML",
+    "relatedSkills": ["6", "9", "10"],
+    "color": "#FF6F00",
+    "description": "深度学习框架，构建和训练神经网络"
+  },
+  {
+    "id": "8",
+    "name": "AWS",
+    "proficiency": 82,
+    "category": "DevOps",
+    "relatedSkills": ["5", "11", "12"],
+    "color": "#FF9900",
+    "description": "云计算平台，提供可扩展的基础设施"
+  },
+  {
+    "id": "9",
+    "name": "PyTorch",
+    "proficiency": 85,
+    "category": "AI/ML",
+    "relatedSkills": ["6", "7", "10"],
+    "color": "#EE4C2C",
+    "description": "动态神经网络框架，研究和生产两用"
+  },
+  {
+    "id": "10",
+    "name": "scikit-learn",
+    "proficiency": 88,
+    "category": "AI/ML",
+    "relatedSkills": ["6", "7", "9"],
+    "color": "#F7931E",
+    "description": "机器学习库，提供经典算法和工具"
+  },
+  {
+    "id": "11",
+    "name": "Docker",
+    "proficiency": 80,
+    "category": "DevOps",
+    "relatedSkills": ["8", "12", "13"],
+    "color": "#2496ED",
+    "description": "容器化平台，简化应用部署"
+  },
+  {
+    "id": "12",
+    "name": "Kubernetes",
+    "proficiency": 75,
+    "category": "DevOps",
+    "relatedSkills": ["8", "11", "13"],
+    "color": "#326CE5",
+    "description": "容器编排系统，管理大规模应用"
+  },
+  {
+    "id": "13",
+    "name": "MongoDB",
+    "proficiency": 85,
+    "category": "Database",
+    "relatedSkills": ["5", "11", "14"],
+    "color": "#47A248",
+    "description": "NoSQL 数据库，灵活的数据模型"
+  },
+  {
+    "id": "14",
+    "name": "PostgreSQL",
+    "proficiency": 82,
+    "category": "Database",
+    "relatedSkills": ["5", "13", "15"],
+    "color": "#336791",
+    "description": "关系型数据库，强大的 SQL 支持"
+  },
+  {
+    "id": "15",
+    "name": "GraphQL",
+    "proficiency": 78,
+    "category": "Backend",
+    "relatedSkills": ["1", "5", "14"],
+    "color": "#E10098",
+    "description": "API 查询语言，灵活的数据获取"
+  },
+  {
+    "id": "16",
+    "name": "Git",
+    "proficiency": 90,
+    "category": "DevOps",
+    "relatedSkills": ["8", "11", "12"],
+    "color": "#F05032",
+    "description": "版本控制系统，团队协作必备"
+  }
+]
