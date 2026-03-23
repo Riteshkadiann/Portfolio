@@ -1,0 +1,143 @@
+{
+  "events": [
+    {
+      "id": "event-1",
+      "date": "2024-01",
+      "year": 2024,
+      "title": "AI平台架构师",
+      "company": "某知名科技公司",
+      "type": "work",
+      "description": "负责企业级AI平台的整体架构设计，带领团队构建分布式机器学习训练系统",
+      "details": "主导设计了支持万级GPU集群的分布式训练平台，实现模型并行和数据并行的混合训练策略。平台支持PyTorch、TensorFlow等多种框架，日处理训练任务超过5000个。优化了资源调度算法，将GPU利用率从45%提升至85%。",
+      "technologies": ["Python", "PyTorch", "Kubernetes", "Ray", "Redis", "Kafka"],
+      "achievements": [
+        "设计并实现分布式训练框架，支持千亿参数模型训练",
+        "构建自动化ML Pipeline，缩短模型迭代周期60%",
+        "实现智能资源调度系统，节省计算成本40%"
+      ],
+      "image": "/images/ai-platform.png"
+    },
+    {
+      "id": "event-2",
+      "date": "2023-06",
+      "year": 2023,
+      "title": "智能客服系统",
+      "company": "个人项目",
+      "type": "project",
+      "description": "基于大语言模型的企业级智能客服解决方案",
+      "details": "开发了一套完整的智能客服系统，集成RAG（检索增强生成）技术，支持多轮对话和知识库自动更新。系统采用微服务架构，支持高并发场景，响应时间控制在200ms以内。",
+      "technologies": ["Python", "FastAPI", "LangChain", "PostgreSQL", "Redis", "Docker"],
+      "achievements": [
+        "实现95%的常见问题自动解答率",
+        "支持多语言对话，覆盖中英日韩等8种语言",
+        "日处理对话量超过10万条"
+      ],
+      "image": "/images/chatbot.png",
+      "github": "https://github.com/example/smart-chatbot"
+    },
+    {
+      "id": "event-3",
+      "date": "2023-01",
+      "year": 2023,
+      "title": "高级后端工程师",
+      "company": "某互联网大厂",
+      "type": "work",
+      "description": "负责核心业务系统的架构升级和性能优化",
+      "details": "主导将单体架构迁移至微服务架构，设计并实现高可用消息推送系统。优化数据库查询性能，将核心接口响应时间从2s降低至100ms。建立完善的监控告警体系，系统可用性达到99.99%。",
+      "technologies": ["Node.js", "Go", "MongoDB", "Redis", "Kafka", "Elasticsearch"],
+      "achievements": [
+        "完成单体应用到微服务的平滑迁移，零停机时间",
+        "设计实现的消息推送系统日推送量达1亿+",
+        "构建自动化运维平台，故障恢复时间缩短80%"
+      ],
+      "image": "/images/backend-system.png"
+    },
+    {
+      "id": "event-4",
+      "date": "2022-08",
+      "year": 2022,
+      "title": "计算机视觉平台",
+      "company": "个人项目",
+      "type": "project",
+      "description": "面向工业质检的计算机视觉检测平台",
+      "details": "开发了一套工业视觉检测系统，支持缺陷检测、尺寸测量、OCR识别等功能。采用边缘计算架构，支持在工业相机端进行实时推理。平台提供可视化模型训练界面，降低AI应用门槛。",
+      "technologies": ["Python", "PyTorch", "OpenCV", "TensorRT", "Flask", "Vue.js"],
+      "achievements": [
+        "缺陷检测准确率超过99.5%",
+        "单帧处理速度达到1000fps",
+        "支持100+种工业场景的视觉检测"
+      ],
+      "image": "/images/cv-platform.png",
+      "github": "https://github.com/example/cv-inspection"
+    },
+    {
+      "id": "event-5",
+      "date": "2022-03",
+      "year": 2022,
+      "title": "后端开发工程师",
+      "company": "某创业公司",
+      "type": "work",
+      "description": "负责电商平台后端系统开发和维护",
+      "details": "参与电商平台从0到1的构建，负责订单系统、支付系统、库存系统等核心模块开发。设计实现分布式锁解决超卖问题，构建秒杀系统支撑每秒10万并发。",
+      "technologies": ["Python", "Django", "MySQL", "Redis", "RabbitMQ", "Docker"],
+      "achievements": [
+        "支撑日订单量从1万增长至100万",
+        "秒杀系统成功应对双11流量高峰",
+        "订单系统响应时间优化至50ms以内"
+      ],
+      "image": "/images/ecommerce.png"
+    },
+    {
+      "id": "event-6",
+      "date": "2021-06",
+      "year": 2021,
+      "title": "数据可视化平台",
+      "company": "个人项目",
+      "type": "project",
+      "description": "基于WebGL的大数据可视化分析平台",
+      "details": "开发了一套支持百万级数据点实时渲染的可视化平台。集成Three.js实现3D数据展示，支持多种图表类型和交互方式。提供数据钻取、联动分析等高级功能。",
+      "technologies": ["React", "Three.js", "D3.js", "Node.js", "MongoDB", "WebSocket"],
+      "achievements": [
+        "支持100万+数据点流畅渲染",
+        "实现60fps的实时数据更新",
+        "提供20+种可视化图表组件"
+      ],
+      "image": "/images/dataviz.png",
+      "github": "https://github.com/example/data-viz-platform"
+    },
+    {
+      "id": "event-7",
+      "date": "2021-01",
+      "year": 2021,
+      "title": "初级开发工程师",
+      "company": "某软件公司",
+      "type": "work",
+      "description": "参与企业管理系统的前后端开发",
+      "details": "负责CRM系统的功能开发和维护，参与需求分析、技术方案设计、代码实现和测试部署。独立完成了客户管理、销售漏斗、数据分析等模块的开发。",
+      "technologies": ["JavaScript", "Vue.js", "Node.js", "MySQL", "Express"],
+      "achievements": [
+        "独立完成3个核心功能模块开发",
+        "优化前端性能，首屏加载时间减少50%",
+        "获得年度最佳新人奖"
+      ],
+      "image": "/images/crm-system.png"
+    },
+    {
+      "id": "event-8",
+      "date": "2020-09",
+      "year": 2020,
+      "title": "计算机科学硕士",
+      "company": "某重点大学",
+      "type": "education",
+      "description": "专注机器学习和分布式系统研究",
+      "details": "研究方向为分布式机器学习系统，发表了2篇SCI论文。参与国家自然科学基金项目，负责算法优化和系统实现。GPA 3.9/4.0，获得优秀毕业生称号。",
+      "technologies": ["Python", "PyTorch", "TensorFlow", "Spark", "Hadoop"],
+      "achievements": [
+        "发表2篇SCI一区论文",
+        "获得国家奖学金",
+        "优秀硕士毕业论文"
+      ],
+      "image": "/images/education.png"
+    }
+  ]
+}

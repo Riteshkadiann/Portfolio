@@ -1,0 +1,282 @@
+{
+  "skills": [
+    {
+      "id": "python",
+      "name": "Python",
+      "proficiency": 95,
+      "category": "backend",
+      "color": "#3776AB",
+      "description": "精通Python开发，包括异步编程、装饰器、元类等高级特性",
+      "relatedSkills": ["django", "fastapi", "pandas", "pytorch", "tensorflow"]
+    },
+    {
+      "id": "nodejs",
+      "name": "Node.js",
+      "proficiency": 90,
+      "category": "backend",
+      "color": "#339933",
+      "description": "深入理解事件循环、流处理、集群等核心机制",
+      "relatedSkills": ["express", "typescript", "mongodb", "redis"]
+    },
+    {
+      "id": "react",
+      "name": "React",
+      "proficiency": 88,
+      "category": "frontend",
+      "color": "#61DAFB",
+      "description": "熟练使用Hooks、Context、性能优化等现代React开发",
+      "relatedSkills": ["typescript", "nextjs", "threejs", "tailwind"]
+    },
+    {
+      "id": "django",
+      "name": "Django",
+      "proficiency": 85,
+      "category": "backend",
+      "color": "#092E20",
+      "description": "精通ORM、中间件、信号、缓存等Django核心功能",
+      "relatedSkills": ["python", "postgresql", "redis", "celery"]
+    },
+    {
+      "id": "fastapi",
+      "name": "FastAPI",
+      "proficiency": 82,
+      "category": "backend",
+      "color": "#009688",
+      "description": "构建高性能异步API，集成OAuth2、WebSocket等",
+      "relatedSkills": ["python", "postgresql", "docker", "kubernetes"]
+    },
+    {
+      "id": "pytorch",
+      "name": "PyTorch",
+      "proficiency": 80,
+      "category": "ai",
+      "color": "#EE4C2C",
+      "description": "深度学习模型开发，包括CNN、RNN、Transformer等架构",
+      "relatedSkills": ["python", "tensorflow", "numpy", "opencv"]
+    },
+    {
+      "id": "tensorflow",
+      "name": "TensorFlow",
+      "proficiency": 78,
+      "category": "ai",
+      "color": "#FF6F00",
+      "description": "生产级机器学习模型部署和TensorFlow Serving",
+      "relatedSkills": ["python", "pytorch", "keras", "mlflow"]
+    },
+    {
+      "id": "express",
+      "name": "Express.js",
+      "proficiency": 85,
+      "category": "backend",
+      "color": "#404040",
+      "description": "RESTful API设计和中间件开发",
+      "relatedSkills": ["nodejs", "mongodb", "typescript", "redis"]
+    },
+    {
+      "id": "mongodb",
+      "name": "MongoDB",
+      "proficiency": 82,
+      "category": "database",
+      "color": "#47A248",
+      "description": "文档数据库设计、聚合管道、索引优化",
+      "relatedSkills": ["nodejs", "mongoose", "redis", "docker"]
+    },
+    {
+      "id": "postgresql",
+      "name": "PostgreSQL",
+      "proficiency": 80,
+      "category": "database",
+      "color": "#336791",
+      "description": "复杂查询优化、存储过程、全文搜索",
+      "relatedSkills": ["python", "django", "sqlalchemy", "redis"]
+    },
+    {
+      "id": "redis",
+      "name": "Redis",
+      "proficiency": 75,
+      "category": "database",
+      "color": "#DC382D",
+      "description": "缓存策略、发布订阅、分布式锁",
+      "relatedSkills": ["nodejs", "python", "docker", "kubernetes"]
+    },
+    {
+      "id": "docker",
+      "name": "Docker",
+      "proficiency": 78,
+      "category": "devops",
+      "color": "#2496ED",
+      "description": "容器化应用、多阶段构建、Docker Compose编排",
+      "relatedSkills": ["kubernetes", "jenkins", "aws", "gitlab"]
+    },
+    {
+      "id": "kubernetes",
+      "name": "Kubernetes",
+      "proficiency": 72,
+      "category": "devops",
+      "color": "#326CE5",
+      "description": "Pod编排、服务发现、自动扩缩容",
+      "relatedSkills": ["docker", "helm", "prometheus", "grafana"]
+    },
+    {
+      "id": "aws",
+      "name": "AWS",
+      "proficiency": 75,
+      "category": "cloud",
+      "color": "#FF9900",
+      "description": "EC2、S3、Lambda、RDS、EKS等核心服务",
+      "relatedSkills": ["docker", "terraform", "jenkins", "python"]
+    },
+    {
+      "id": "threejs",
+      "name": "Three.js",
+      "proficiency": 85,
+      "category": "frontend",
+      "color": "#000000",
+      "description": "3D场景构建、着色器编程、后期处理效果",
+      "relatedSkills": ["react", "webgl", "gsap", "blender"]
+    },
+    {
+      "id": "typescript",
+      "name": "TypeScript",
+      "proficiency": 88,
+      "category": "frontend",
+      "color": "#3178C6",
+      "description": "类型系统、泛型编程、装饰器模式",
+      "relatedSkills": ["react", "nodejs", "nextjs", "express"]
+    },
+    {
+      "id": "pandas",
+      "name": "Pandas",
+      "proficiency": 85,
+      "category": "ai",
+      "color": "#150458",
+      "description": "数据清洗、特征工程、时间序列分析",
+      "relatedSkills": ["python", "numpy", "matplotlib", "scikit-learn"]
+    },
+    {
+      "id": "numpy",
+      "name": "NumPy",
+      "proficiency": 82,
+      "category": "ai",
+      "color": "#013243",
+      "description": "数值计算、矩阵运算、广播机制",
+      "relatedSkills": ["python", "pandas", "scipy", "pytorch"]
+    },
+    {
+      "id": "nextjs",
+      "name": "Next.js",
+      "proficiency": 80,
+      "category": "frontend",
+      "color": "#000000",
+      "description": "SSR/SSG、API路由、中间件、优化策略",
+      "relatedSkills": ["react", "typescript", "tailwind", "vercel"]
+    },
+    {
+      "id": "tailwind",
+      "name": "Tailwind CSS",
+      "proficiency": 85,
+      "category": "frontend",
+      "color": "#06B6D4",
+      "description": "实用优先CSS、自定义主题、响应式设计",
+      "relatedSkills": ["react", "nextjs", "typescript", "figma"]
+    },
+    {
+      "id": "celery",
+      "name": "Celery",
+      "proficiency": 75,
+      "category": "backend",
+      "color": "#37814A",
+      "description": "分布式任务队列、定时任务、工作流编排",
+      "relatedSkills": ["python", "django", "redis", "rabbitmq"]
+    },
+    {
+      "id": "rabbitmq",
+      "name": "RabbitMQ",
+      "proficiency": 70,
+      "category": "backend",
+      "color": "#FF6600",
+      "description": "消息队列、路由模式、死信队列",
+      "relatedSkills": ["python", "nodejs", "celery", "docker"]
+    },
+    {
+      "id": "opencv",
+      "name": "OpenCV",
+      "proficiency": 72,
+      "category": "ai",
+      "color": "#5C3EE8",
+      "description": "图像处理、计算机视觉、特征检测",
+      "relatedSkills": ["python", "pytorch", "numpy", "tensorflow"]
+    },
+    {
+      "id": "scikit-learn",
+      "name": "Scikit-learn",
+      "proficiency": 78,
+      "category": "ai",
+      "color": "#F7931E",
+      "description": "传统机器学习算法、模型评估、特征选择",
+      "relatedSkills": ["python", "pandas", "numpy", "matplotlib"]
+    },
+    {
+      "id": "graphql",
+      "name": "GraphQL",
+      "proficiency": 75,
+      "category": "backend",
+      "color": "#E10098",
+      "description": "API查询语言、Schema设计、Resolver优化",
+      "relatedSkills": ["nodejs", "apollo", "prisma", "typescript"]
+    },
+    {
+      "id": "prisma",
+      "name": "Prisma",
+      "proficiency": 78,
+      "category": "database",
+      "color": "#2D3748",
+      "description": "ORM、数据库迁移、类型安全查询",
+      "relatedSkills": ["nodejs", "typescript", "postgresql", "graphql"]
+    },
+    {
+      "id": "terraform",
+      "name": "Terraform",
+      "proficiency": 70,
+      "category": "devops",
+      "color": "#7B42BC",
+      "description": "基础设施即代码、状态管理、模块化设计",
+      "relatedSkills": ["aws", "docker", "kubernetes", "ansible"]
+    },
+    {
+      "id": "jenkins",
+      "name": "Jenkins",
+      "proficiency": 72,
+      "category": "devops",
+      "color": "#D24939",
+      "description": "CI/CD流水线、插件开发、自动化部署",
+      "relatedSkills": ["docker", "kubernetes", "gitlab", "ansible"]
+    },
+    {
+      "id": "prometheus",
+      "name": "Prometheus",
+      "proficiency": 68,
+      "category": "devops",
+      "color": "#E6522C",
+      "description": "监控告警、指标收集、PromQL查询",
+      "relatedSkills": ["grafana", "kubernetes", "docker", "alertmanager"]
+    },
+    {
+      "id": "grafana",
+      "name": "Grafana",
+      "proficiency": 70,
+      "category": "devops",
+      "color": "#F46800",
+      "description": "数据可视化、仪表盘设计、告警配置",
+      "relatedSkills": ["prometheus", "elasticsearch", "influxdb", "loki"]
+    }
+  ],
+  "categories": {
+    "backend": { "name": "后端开发", "color": "#4CAF50" },
+    "frontend": { "name": "前端开发", "color": "#2196F3" },
+    "ai": { "name": "人工智能", "color": "#9C27B0" },
+    "database": { "name": "数据库", "color": "#FF9800" },
+    "devops": { "name": "DevOps", "color": "#F44336" },
+    "cloud": { "name": "云服务", "color": "#00BCD4" }
+  }
+}

@@ -9,8 +9,11 @@ import SocialIcons from "./SocialIcons";
 import WhatIDo from "./WhatIDo";
 import Work from "./Work";
 import setSplitText from "./utils/splitText";
+import "./styles/SkillGalaxySection.css";
 
 const TechStack = lazy(() => import("./TechStack"));
+const SkillGalaxy = lazy(() => import("./SkillGalaxy/index.tsx"));
+const TimelineTunnel = lazy(() => import("./TimelineTunnel/index.tsx"));
 
 const MainContainer = ({ children }: PropsWithChildren) => {
   const [isDesktopView, setIsDesktopView] = useState<boolean>(
@@ -42,7 +45,27 @@ const MainContainer = ({ children }: PropsWithChildren) => {
             <About />
             <WhatIDo />
             <Career />
+            {/* 3D时间轴隧道组件 */}
+            <section id="timeline-tunnel" className="timeline-tunnel-section">
+              <div className="section-header">
+                <h2>Journey Through Time</h2>
+                <p>Scroll to explore my career timeline</p>
+              </div>
+              <Suspense fallback={<div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>Loading Timeline...</div>}>
+                <TimelineTunnel />
+              </Suspense>
+            </section>
             <Work />
+            {/* 3D技能星系组件 */}
+            <section id="skill-galaxy" className="skill-galaxy-section">
+              <div className="section-header">
+                <h2>Skill Galaxy</h2>
+                <p>Explore my technical skills in 3D space</p>
+              </div>
+              <Suspense fallback={<div style={{ height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff' }}>Loading Galaxy...</div>}>
+                <SkillGalaxy />
+              </Suspense>
+            </section>
             {isDesktopView && (
               <Suspense fallback={<div>Loading....</div>}>
                 <TechStack />

@@ -1,0 +1,96 @@
+/* 技能星系区块样式 */
+.skill-galaxy-section {
+  width: 100%;
+  position: relative;
+}
+
+.skill-galaxy-section .section-header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background: radial-gradient(ellipse at center, #0a0a1a 0%, #000000 100%);
+}
+
+.skill-galaxy-section .section-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, #00d4ff, #ff00d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.skill-galaxy-section .section-header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+}
+
+/* 时间轴隧道区块样式 */
+.timeline-tunnel-section {
+  width: 100%;
+  position: relative;
+}
+
+.timeline-tunnel-section .section-header {
+  text-align: center;
+  padding: 80px 20px 0;
+  background: linear-gradient(to bottom, #0a0a1a 0%, #000000 100%);
+}
+
+.timeline-tunnel-section .section-header h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 0 0 16px 0;
+  background: linear-gradient(135deg, #00d4ff, #ff00d4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.timeline-tunnel-section .section-header p {
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 40px 0;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .skill-galaxy-section .section-header,
+  .timeline-tunnel-section .section-header {
+    padding: 60px 20px 30px;
+  }
+
+  .skill-galaxy-section .section-header h2,
+  .timeline-tunnel-section .section-header h2 {
+    font-size: 32px;
+  }
+
+  .skill-galaxy-section .section-header p,
+  .timeline-tunnel-section .section-header p {
+    font-size: 14px;
+  }
+}
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #00d4ff, #ff00d4);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00a8cc, #cc00a8);
+}
