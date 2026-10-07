@@ -7,13 +7,9 @@ const Contact = () => {
       <div className="contact-container">
         <h3>Contact</h3>
         <div className="contact-flex">
-          <div className="contact-box">
+          <div className="contact-box">    
             <h4>Email</h4>
-            <p>
-              <a href="mailto:riteshkadian4@gmail.com" data-cursor="disable">
-                riteshkadian4@gmail.com
-              </a>
-            </p>
+            <p>riteshkadian4@gmail.com  </p>        
             <h4>Location</h4>
             <p>Toronto, ON</p>
           </div>
@@ -35,14 +31,16 @@ const Contact = () => {
             >
               LinkedIn <MdArrowOutward />
             </a>
+            <a
+              href="https://leetcode.com/u/riteshkadian/"
+              target="_blank"
+              data-cursor="disable"
+              className="contact-social"
+            >
+              LeetCode <MdArrowOutward />
+            </a>
           </div>
           <div className="contact-box">
-            <h2>
-              Designed and Developed <br /> by <span>Ritesh Kadian</span>
-            </h2>
-            <h5>
-              <MdCopyright /> 2026
-            </h5>
           </div>
         </div>
       </div>

@@ -15,20 +15,6 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Business Development Executive</h4>
-                <h5>DataCove.ai</h5>
-              </div>
-              <h3>2025</h3>
-            </div>
-            <p>
-              Leading AI solution outreach to Canadian & US legal firms for early-stage adoption.
-              Translated complex workflow automation and phishing detection systems into
-              business solutions. Collaborated with founders on product-market fit refinement.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
                 <h4>Software Engineering Technology Student</h4>
                 <h5>Centennial College</h5>
               </div>
@@ -37,7 +23,18 @@ const Career = () => {
             <p>
               Advanced Diploma with CGPA 3.7/4.5. Relevant coursework: Data Structures & Algorithms, Programming, 
               Advanced Database Concepts, Software Systems Design, Unix/Linux, Linear Algebra & Statistics.
-              AWS Certified Solutions Architect – Associate (2026).
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>AI Developer Intern</h4>
+                <h5>DataCove.ai</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <p>
+              Contributed to the development of 'DefenceNet', an AI-powered cybersecurity application that helps users detect and avoid phishing URLs and other online threats.
             </p>
           </div>
         </div>
