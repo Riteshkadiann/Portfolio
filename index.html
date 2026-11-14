@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ritesh Kadian — Portfolio</title>
+    <meta name="description" content="Ritesh Kadian is a Software Engineering Technology student in Toronto building intelligent solutions through AI, software engineering and cloud technology." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="progress" id="pr"></div>
+    <div class="smart-cursor" id="cursor" aria-hidden="true"><span></span></div>
+
+    <nav class="nav" id="nv">
+      <a class="brand magnetic" href="#top" data-cursor="Home">RK<span>.</span></a>
+      <div class="availability"><i></i> Open to AI / SWE Roles</div>
+      <div class="nav-center">Ritesh Kadian</div>
+      <button class="menu-toggle magnetic" id="mb" aria-expanded="false">MENU <span>↗</span></button>
+      <ul id="ul">
+        <li><a href="#about">About</a></li><li><a href="#experience">Experience</a></li><li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#education">Education</a></li><li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <header class="hero" id="top">
+        <div class="hero-grid">
+          <div class="eyebrow">01 / Software & AI Engineer <span class="live-dot"></span></div>
+          <div class="hero-copy">
+            <h1>RITESH<br /><em>KADIAN</em></h1>
+            <p class="hero-tagline">Software Engineer by craft.<br /><strong>Building intelligent AI systems.</strong></p>
+            <div class="hero-actions">
+              <a class="button button-dark magnetic" href="#projects" data-cursor="Explore">View my work <span>↓</span></a>
+              <a class="button button-light magnetic" href="resume.pdf" target="_blank" rel="noopener" data-cursor="Resume">Resume <span>↗</span></a>
+              <a class="text-link magnetic" href="https://github.com/Riteshkadiann" target="_blank" rel="noopener">GitHub ↗</a>
+              <a class="text-link magnetic" href="https://www.linkedin.com/in/ritesh-kadian/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            </div>
+          </div>
+          <div class="hero-meta mono"><span>TORONTO, CA</span><span>SCROLL TO EXPLORE ↓</span></div>
+          <div class="model-stage" id="hero-model" aria-label="Interactive 3D skull character"></div>
+          <div class="model-shadow"></div>
+        </div>
+        <div class="command-panel">
+          <div class="command-top"><span class="command-icon">⌘</span><span>ASK MY ENGINEERING TWIN</span><kbd>⌘ K</kbd></div>
+          <div class="command-input" id="command-output">Ask about my AI stack, DefenceNet, or experience...</div>
+          <div class="quick-chips"><button data-answer="I build practical AI systems with Python, FastAPI, NLP, scikit-learn and cloud services.">AI stack?</button><button data-answer="DefenceNet is an AI-powered anti-phishing platform with behavioural analysis, SSL validation and real-time threat scoring.">Best AI project?</button><button data-answer="I am a Gen AI Developer Intern at Datacove.ai, integrating ML models into backend services with Python, FastAPI and REST APIs.">Experience?</button></div>
+        </div>
+      </header>
+
+      <section id="about" class="section about">
+        <div class="section-label"><span>02</span><span>About / Context</span></div>
+        <div class="about-layout">
+          <p class="display-copy">Obsessed with how systems work under the hood, and how AI makes them smarter. I design, wire, and ship intelligent applications built for real-world traffic.</p>
+          <div class="about-notes"><div><span class="mono">STUDYING</span><p>Software Engineering Technology at Centennial College, now in my third year.</p></div><div><span class="mono">BUILDING</span><p>Phishing detection at Datacove.ai, NLP skill matching, and REST APIs in Python.</p></div><div><span class="mono">WORKING STYLE</span><p>Experiment, break it, debug it, improve it. I learn by shipping things that work.</p></div></div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-head"><div class="section-label"><span>03</span><span>Selected Work</span></div><span class="mono section-note">SYSTEMS IN PRODUCTION / 2024—26</span></div>
+        <div class="project-grid" id="project-grid">
+          <article class="project-card featured tilt-card" data-cursor="See Project"><div class="project-art shield-art"><span>DEFENCE<br />NET</span><i>01</i><div class="scanline"></div></div><div class="project-info"><div class="project-number mono">01 — AI / CYBERSECURITY</div><h2>DefenceNet</h2><p><b>Problem.</b> Phishing links are hard to spot, so users need protection before they click.</p><p><b>Contribution.</b> Built and improved ML workflows for URL classification and real-time threat scoring, exposing inference through FastAPI services.</p><div class="metrics"><span>REAL-TIME THREAT SCORING</span><span>BEHAVIOURAL ANALYSIS</span></div><div class="card-links"><a href="https://www.defencenet.ai/" target="_blank" rel="noopener">Visit live site ↗</a></div></div></article>
+          <article class="project-card tilt-card" data-cursor="View Code"><div class="project-art vector-art"><span>SKILL<br />VECTOR</span><i>02</i><div class="nodes">✦ · · ✦</div></div><div class="project-info"><div class="project-number mono">02 — AI / NLP</div><h2>SkillVector</h2><p><b>Problem.</b> Resume screening is slow and keyword-based; matching should understand skills.</p><p><b>Contribution.</b> NLP skill-matching system comparing resumes with job descriptions using TF-IDF and cosine similarity, with FastAPI APIs behind React.</p><div class="tag-row"><span>Python</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span><span>spaCy</span></div><div class="card-links"><a href="https://github.com/Riteshkadiann/SkillVector" target="_blank" rel="noopener">View on GitHub ↗</a><button class="gallery-trigger" data-i="1">View screenshots</button></div></div></article>
+          <article class="project-card tilt-card" data-cursor="View Code"><div class="project-art dental-art"><span>AURA<br />DENTAL</span><i>03</i><div class="crosshair">＋</div></div><div class="project-info"><div class="project-number mono">03 — FULL-STACK</div><h2>Aura-Dental</h2><p><b>Problem.</b> Clinics juggle patients, appointments and billing across disconnected tools.</p><p><b>Contribution.</b> Designed the REST API architecture for appointments, billing, patient and review management, with a MongoDB data model.</p><div class="tag-row"><span>Node.js</span><span>Express</span><span>MongoDB</span></div><div class="card-links"><a href="https://github.com/Riteshkadiann/Aura-Dental" target="_blank" rel="noopener">View on GitHub ↗</a><button class="gallery-trigger" data-i="2">View screenshots</button></div></div></article>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills"><div class="section-head"><div class="section-label"><span>04</span><span>Skills & Stack</span></div><span class="mono section-note">FILTER BY CAPABILITY</span></div><div class="skill-filters" id="skill-filters"><button class="active" data-filter="all">All systems</button><button data-filter="ai">AI / ML</button><button data-filter="backend">Backend</button><button data-filter="cloud">Cloud</button></div><div class="bento-grid"><article class="bento-card large" data-category="ai"><span class="bento-icon">◈</span><span class="mono">01 / INTELLIGENCE</span><h3>AI & Machine<br />Learning</h3><p><b>scikit-learn, PyTorch, NLP, spaCy</b><br />TensorFlow, TF-IDF, Pandas, NumPy, feature engineering, model evaluation</p></article><article class="bento-card" data-category="backend"><span class="bento-icon">⌁</span><span class="mono">02 / BUILD</span><h3>Languages</h3><p><b>Python</b> / Java, JavaScript, C#, Kotlin, HTML, CSS</p></article><article class="bento-card cobalt" data-category="backend"><span class="bento-icon">↗</span><span class="mono">03 / SHIP</span><h3>Backend</h3><p><b>FastAPI, REST APIs</b> / Spring Boot, Node.js, Express, MVC</p></article><article class="bento-card" data-category="cloud"><span class="bento-icon">⌬</span><span class="mono">04 / INFRA</span><h3>Cloud & Tools</h3><p><b>AWS (EC2, S3, CLI)</b> / Linux, Ansible, Render, Git, GitHub</p></article><article class="bento-card" data-category="backend"><span class="bento-icon">▦</span><span class="mono">05 / DATA</span><h3>Databases</h3><p>PostgreSQL / MongoDB, MySQL, DynamoDB</p></article><article class="bento-card lab-card" data-category="ai"><div class="terminal"><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span><p><i>›</i> inference.run()</p><p class="green">✓ FastAPI: 200 OK</p><p>↳ latency: <b>38ms</b></p><p>↳ model_eval: <b class="green">PASS</b></p></div><span class="mono">06 / LIVE LAB</span><h3>Foundations</h3><p>Data structures, algorithms / OOP, system design, cybersecurity</p></article></div></section>
+
+      <section id="experience" class="section timeline"><div class="section-head"><div class="section-label"><span>05</span><span>Experience</span></div><span class="mono section-note">A RECORD OF SHIPPING</span></div><div class="timeline-row"><div class="timeline-date mono">MAR 2026 — AUG 2026</div><div><h2>Gen AI Developer Intern</h2><p class="company">Datacove.ai · Toronto</p><p class="project-label">DefenceNet — AI-powered anti-phishing platform</p></div><ul><li>Built and improved machine learning workflows for phishing URL detection, using behavioural analysis, SSL validation, domain intelligence and redirect-pattern analysis.</li><li>Helped develop real-time threat scoring to classify URLs before users interact with them.</li><li>Worked on preprocessing, feature engineering and model evaluation to improve detection.</li><li>Integrated models into backend services with Python, FastAPI and REST APIs.</li><li>Collaborated with engineering teams on proactive threat detection.</li></ul></div></section>
+
+      <section id="education" class="section education"><div class="section-head"><div class="section-label"><span>06</span><span>Education & Credentials</span></div></div><div class="education-grid"><div><span class="mono">SEPT 2024 — APRIL 2027</span><h2>Software Engineering Technology</h2><p>Centennial College — Advanced Diploma</p></div><div><span class="mono">FEB 15, 2026</span><h2>AWS Solutions Architect — Associate</h2><p>Certificate of completion · Udemy<br /><a href="AWS-Certificate.pdf" target="_blank" rel="noopener">View certificate ↗</a></p></div></div></section>
+    </main>
+
+    <footer id="contact" class="footer"><div class="footer-watermark">Hello</div><div class="footer-top"><span class="mono">07 / CONTACT</span><span class="mono local-time" id="local-time"></span></div><div class="footer-content"><h2>Still scrolling?<br /><em>Good sign.</em><br />Let's build something meaningful.</h2><div class="footer-cta"><span class="email-label">Email me</span><button class="email-button" id="copy-email" data-cursor="Copy Email">riteshkadian4@gmail.com <span>↗</span></button><div class="toast" id="toast">Email copied to clipboard.</div><div class="socials"><a href="https://github.com/Riteshkadiann" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/ritesh-kadian/" target="_blank" rel="noopener">LinkedIn ↗</a></div></div></div><div class="footer-bottom"><span>© 2026 Ritesh Kadian</span><span>Toronto, Ontario, Canada</span><button id="back-top">Back to top ↑</button></div></footer>
+
+    <div id="gv" class="gallery" role="dialog" aria-modal="true" aria-label="Screenshots"><div class="gallery-bar"><button id="gx">← Back</button><span class="mono" id="gt"></span><span class="mono">Swipe or scroll →</span></div><div id="gs"></div></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
